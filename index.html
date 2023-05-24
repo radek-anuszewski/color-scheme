@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Color scheme</title>
+	<script type="module">
+		const root = document.querySelector("html")
+		document.querySelector("#colorScheme").addEventListener("change", e => {
+      root.style.colorScheme = e.target.value;
+		});
+	</script>
+</head>
+<body>
+<main>
+	<h1>Color scheme</h1>
+	<article>
+		<label for="colorScheme">Color scheme</label>
+		<select id="colorScheme">
+			<option value="light">Light</option>
+			<option value="dark">Dark</option>
+		</select>
+		<br><br>
+		<section>
+			<label for="text">Text</label><input type="text" value="Test" id="text"><br><br>
+			<label for="number">Number</label><input type="number" value="3" id="number"><br><br>
+			<label for="checkbox">Checkbox <input type="checkbox" id="checkbox"></label><br><br>
+			<fieldset>
+				<legend>Radios</legend>
+				<label for="firstRadio">First radio <input name="radio" type="radio" id="firstRadio"></label><br>
+				<label for="secondRadio">Second radio <input name="radio" type="radio" id="secondRadio"></label><br>
+				<label for="thirdRadio">Third radio <input name="radio" type="radio" id="thirdRadio"></label><br>
+			</fieldset>
+			<br><br>
+			<select>
+				<option>One</option>
+				<option>Two</option>
+				<option>Three</option>
+			</select>
+		</section>
+	</article>
+</main>
+</body>
+</html>
